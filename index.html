@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上田 友也 | Web アプリケーションエンジニア志望 ポートフォリオ</title>
+  <meta name="description" content="上田友也のポートフォリオ。PHP / Laravel を軸に、要件整理からテストまで一人で形にできます。インフラ運用の経験を活かし、動かす環境まで含めて考えられるエンジニアを目指しています。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-motion="full">
+  <a class="skip" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="st" aria-hidden="true"></span>ueda.dev — online</a>
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#works">works</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= ヒーロー ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <svg viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 120 H300 L340 160 H700 L740 120 H1200"/><path d="M0 300 H200 L240 340 V520 H600 L640 560 H1200"/><path d="M900 0 V200 L860 240 V700"/><path d="M1050 0 V400 L1090 440 H1200"/><path d="M0 620 H420 L460 580 H820"/>
+        <path class="live" d="M0 120 H300 L340 160 H700 L740 120 H1200"/><path class="live" style="animation-delay:-2s" d="M0 300 H200 L240 340 V520 H600 L640 560 H1200"/><path class="live" style="animation-delay:-4s" d="M900 0 V200 L860 240 V700"/>
+        <circle cx="300" cy="120" r="4"/><circle cx="700" cy="160" r="4" class="on"/><circle cx="240" cy="340" r="4" class="on"/><circle cx="600" cy="520" r="4"/><circle cx="860" cy="240" r="4" class="on"/><circle cx="1090" cy="440" r="4"/><circle cx="460" cy="580" r="4"/>
+      </svg>
+      <div class="wrap">
+        <p class="tag">// web application engineer</p>
+        <h1 id="hero-title">Tomoya Ueda<em>_</em></h1>
+        <p class="jp">上田 友也</p>
+        <p class="lead"><strong>PHP・Laravel を軸に、要件整理からテストまで一人で形にします。</strong>インフラ運用の経験があるので、「動かす環境」まで含めて考えられます。</p>
+        <div class="kv" aria-label="概要">
+          <span>apps: <b data-count="5">5</b></span>
+          <span>tests: <b data-count="78" data-suffix=" passing">78 passing</b></span>
+          <span>infra_ops: <b>2y</b></span>
+          <span>location: <b>Kyoto</b></span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#works">works()</a>
+          <a class="btn o" href="https://github.com/taotomo" target="_blank" rel="noopener">github.com/taotomo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 class="section__title" id="about-title"><span>about</span>経歴</h2>
+        <div class="about">
+          <div class="fade-in">
+            <ol class="timeline">
+              <li>
+                <time datetime="2023-04">2023.04 – 2024.10</time>
+                <div><strong>PC オンサイト修理・ヘルプデスク（1 年 7 ヶ月）</strong>
+                <p>DELL・HP 製 PC の故障を電源・ストレージ・メモリ・マザーボードの順に切り分け、部品交換から動作確認まで担当。</p></div>
+              </li>
+              <li>
+                <time datetime="2024-11">2024.11 – 2025.06</time>
+                <div><strong>ネットワーク監視オペレーター（8 ヶ月）</strong>
+                <p>Zabbix によるネットワーク機器の 24 時間監視。アラートの一次対応とエスカレーション、障害報告書の作成。</p></div>
+              </li>
+              <li class="now">
+                <time datetime="2025-07">2025.07 – 現在</time>
+                <div><strong>Web アプリケーション開発を習得</strong>
+                <p>オンラインスクールと独学で PHP・Laravel を習得。スクール課題 2 本のあと、個人開発 2 本と受託 1 本を完成させました。</p></div>
+              </li>
+            </ol>
+          </div>
+          <div class="prose stack fade-in">
+            <h3>学習の進め方</h3>
+            <p>エラーが出たら、まず「どの層で壊れているか」をブラウザ・サーバーのログ・DB で切り分けます。解決したトラブルは症状から引ける形で全部記録しています。</p>
+            <p>使った技術を自分の言葉で説明できるように、技術解説サイト（全 59 章）を自分で執筆しています。</p>
+            <h3>資格</h3>
+            <ul class="tags">
+              <li>基本情報技術者（2023.04）</li>
+              <li>LinuC レベル 1（2023.11）</li>
+              <li>SEA/J 情報セキュリティ技術応用（2022.01）</li>
+              <li>工事担任者 アナログ第 3 種（2019.12）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Skills ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 class="section__title" id="skills-title"><span>skills</span>スキル</h2>
+        <p class="legend" aria-label="習熟度の凡例">
+          <span><span class="dot dot--work" aria-hidden="true"></span>実務で使用</span>
+          <span><span class="dot dot--personal" aria-hidden="true"></span>個人開発で使用</span>
+          <span><span class="dot dot--learning" aria-hidden="true"></span>学習中</span>
+        </p>
+        <div class="skills">
+          <div class="skill-group fade-in"><h3>言語</h3><ul class="skill-list">
+            <li class="skill skill--personal">PHP 8.0 – 8.4<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">TypeScript<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">JavaScript<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">SQL<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">HTML / CSS<span class="visually-hidden">（個人開発で使用）</span></li>
+          </ul></div>
+          <div class="skill-group fade-in"><h3>フレームワーク・ライブラリ</h3><ul class="skill-list">
+            <li class="skill skill--personal">Laravel 8 / 10 / 13<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">React 18 / 19<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Next.js 16<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Inertia.js<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Tailwind CSS<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Stripe API<span class="visually-hidden">（個人開発で使用）</span></li>
+          </ul></div>
+          <div class="skill-group fade-in"><h3>データベース</h3><ul class="skill-list">
+            <li class="skill skill--personal">MySQL 8.0<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">テーブル設計・マイグレーション<span class="visually-hidden">（個人開発で使用）</span></li>
+          </ul></div>
+          <div class="skill-group fade-in"><h3>インフラ・環境</h3><ul class="skill-list">
+            <li class="skill skill--work">Linux<span class="visually-hidden">（実務で使用）</span></li>
+            <li class="skill skill--work">Zabbix<span class="visually-hidden">（実務で使用）</span></li>
+            <li class="skill skill--work">Windows<span class="visually-hidden">（実務で使用）</span></li>
+            <li class="skill skill--personal">Docker Compose（Nginx / PHP-FPM / MySQL）<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">AWS S3<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--learning">AWS Lightsail<span class="visually-hidden">（学習中）</span></li>
+          </ul></div>
+          <div class="skill-group fade-in"><h3>テスト</h3><ul class="skill-list">
+            <li class="skill skill--personal">PHPUnit<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Vitest<span class="visually-hidden">（個人開発で使用）</span></li>
+          </ul></div>
+          <div class="skill-group fade-in"><h3>ツール</h3><ul class="skill-list">
+            <li class="skill skill--personal">Git / GitHub<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">VS Code<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">GitHub Copilot<span class="visually-hidden">（個人開発で使用）</span></li>
+            <li class="skill skill--personal">Claude Code<span class="visually-hidden">（個人開発で使用）</span></li>
+          </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Works ================= -->
+    <section class="section" id="works" aria-labelledby="works-title">
+      <div class="wrap">
+        <h2 class="section__title" id="works-title"><span>works</span>制作物</h2>
+        <p class="prose" style="margin-bottom:var(--s4);color:var(--muted)">新しいものから順に。「詳細を見る」を押すと、課題・実装内容・詰まって解決した点が開きます。</p>
+        <div class="works">
+          <article class="card"><i class="pin" aria-hidden="true"></i>
+            <div class="card__media"><img src="images/store-site.jpg" alt="飲食店の店舗紹介サイトのトップページ" width="1200" height="750" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__meta">[01] client / 2026.07–08 / 1 名</p>
+              <h3 class="card__title"><a href="#work-store">飲食店の店舗紹介サイト</a></h3>
+              <p>知人の店舗から依頼を受けて開発。Next.js の公開サイトと Laravel の API・管理画面を分けたヘッドレス構成。</p>
+              <ul class="tags" aria-label="使用技術"><li>Laravel 13</li><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>MySQL</li><li>AWS S3</li></ul>
+              <p class="card__links"><span class="private">受託案件のためリポジトリ非公開（面談時に画面共有できます）</span><a href="#work-store">詳細を見る</a></p>
+            </div>
+          </article>
+          <article class="card"><i class="pin" aria-hidden="true"></i>
+            <div class="card__media"><img src="images/salon.jpg" alt="美容室予約サイトのサロン一覧ページ" width="1200" height="750" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__meta">[02] personal / 2026.04–07 / 1 名</p>
+              <h3 class="card__title"><a href="#work-salon">美容室の検索・予約サイト</a></h3>
+              <p>エリア・ジャンル検索、評価順ソート、4 ステップの予約フロー、オーナー向け管理画面。PHPUnit で 78 件のテスト。</p>
+              <ul class="tags" aria-label="使用技術"><li>Laravel 13</li><li>React 18</li><li>TypeScript</li><li>Inertia.js</li><li>MySQL</li><li>Docker</li></ul>
+              <p class="card__links"><a href="https://github.com/taotomo/Salon-booing-system-app" target="_blank" rel="noopener">GitHub</a><a href="#work-salon">詳細を見る</a></p>
+            </div>
+          </article>
+          <article class="card"><i class="pin" aria-hidden="true"></i>
+            <div class="card__media"><img src="images/net-shop.jpg" alt="ネットショップの商品一覧ページ" width="1200" height="750" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__meta">[03] personal / 2026.02–03 / 1 名</p>
+              <h3 class="card__title"><a href="#work-netshop">ネットショップ</a></h3>
+              <p>ショップ開設・商品出品・購入（在庫管理）。認証を自作し、認可まで含めた約 50 ケースのテストを作成。</p>
+              <ul class="tags" aria-label="使用技術"><li>Laravel 8</li><li>PHP 8.0</li><li>MySQL</li><li>Docker</li><li>PHPUnit</li></ul>
+              <p class="card__links"><a href="https://github.com/taotomo/net_shop" target="_blank" rel="noopener">GitHub</a><a href="#work-netshop">詳細を見る</a></p>
+            </div>
+          </article>
+          <article class="card"><i class="pin" aria-hidden="true"></i>
+            <div class="card__media"><img src="images/time-card.jpg" alt="勤怠管理アプリの勤怠一覧画面" width="1200" height="750" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__meta">[04] school / 2026.01 / 1 名</p>
+              <h3 class="card__title"><a href="#work-timecard">勤怠管理アプリ</a></h3>
+              <p>出退勤・休憩の打刻、月次カレンダー、修正申請と管理者の承認フロー、CSV 出力。</p>
+              <ul class="tags" aria-label="使用技術"><li>Laravel 10</li><li>PHP 8.2</li><li>MySQL</li><li>Docker</li></ul>
+              <p class="card__links"><a href="https://github.com/taotomo/time-card-app" target="_blank" rel="noopener">GitHub</a><a href="#work-timecard">詳細を見る</a></p>
+            </div>
+          </article>
+          <article class="card"><i class="pin" aria-hidden="true"></i>
+            <div class="card__media"><img src="images/flea-market.jpg" alt="フリマアプリの商品一覧ページ" width="1200" height="750" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__meta">[05] school / 2025.12–2026.01 / 1 名</p>
+              <h3 class="card__title"><a href="#work-flea">フリマアプリ</a></h3>
+              <p>出品・購入・お気に入り・コメント、Stripe API による決済、メール認証。初めて完成させた Laravel アプリ。</p>
+              <ul class="tags" aria-label="使用技術"><li>Laravel 8</li><li>PHP 8.2</li><li>MySQL</li><li>Docker</li><li>Stripe</li></ul>
+              <p class="card__links"><a href="https://github.com/taotomo/flea-market-app" target="_blank" rel="noopener">GitHub</a><a href="#work-flea">詳細を見る</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Works 詳細 ================= -->
+    <section class="section" id="works-detail" aria-labelledby="works-detail-title">
+      <div class="wrap">
+        <h2 class="section__title" id="works-detail-title"><span>works --verbose</span>制作物の詳細</h2>
+
+        <details class="work-detail" id="work-store">
+          <summary class="work-detail__head"><h3>飲食店の店舗紹介サイト</h3><p class="card__meta">client / 2026.07–08 / 1 名 / リポジトリ非公開</p></summary>
+          <dl>
+            <dt>課題</dt>
+            <dd>知人が経営する飲食店に Web サイトがなく、来店の問い合わせが電話に集中していました。主な客層はスマートフォンから検索して電話をかける年配の方で、「電話と LINE にすぐたどり着けること」「店側が自分でスタッフ情報を更新できること」が要件でした。</dd>
+            <dt>実装内容</dt>
+            <dd><ul>
+              <li>公開サイト（Next.js）：店舗紹介・料金表・スタッフ一覧/詳細・アクセス・問い合わせフォーム・年齢確認ゲート</li>
+              <li>API（Laravel）：店舗・スタッフ・料金プランの取得、問い合わせの受付</li>
+              <li>管理画面（Laravel + Blade）：ログイン認証、店舗情報編集、スタッフ・料金プランの CRUD、AWS S3 への画像アップロード・削除</li>
+              <li>Docker Compose による開発環境（Nginx / PHP-FPM / MySQL）と、公開前チェックリストの作成</li>
+            </ul></dd>
+            <dt>工夫した点・詰まって解決した点</dt>
+            <dd><ul>
+              <li><strong>「管理画面で更新しても公開サイトが変わらない」</strong>問題。エラーが出ないため Network タブで確認すると、API へのリクエスト自体が飛んでいませんでした。Next.js がページをビルド時に静的生成する仕様が原因と特定し、<code>cache: "no-store"</code> で常に最新を取得するように修正しました。</li>
+              <li>「写真だけ削除」ボタンを押すとスタッフごと削除される不具合。<code>&lt;form&gt;</code> を入れ子にしていたことが原因で、削除フォームを外側のフォームの外に分離して解決しました。</li>
+              <li>誰でも送信できる問い合わせ API に <code>throttle:5,1</code>（1 分 5 回）のレート制限を設定。バリデーションは FormRequest に分離し、エラー文は <code>lang/ja</code> に集約しました。</li>
+              <li>風営法の許可番号や料金の税込表示など、技術以外で「勝手に決めてはいけない項目」を確認リストに分け、店舗に確認してから反映する運用にしました。</li>
+            </ul></dd>
+            <dt>使用技術</dt>
+            <dd>PHP 8.4 ／ Laravel 13.21 ／ Next.js 16.3 ／ React 19.2 ／ TypeScript 5.9 ／ Tailwind CSS 4 ／ MySQL 8.0 ／ Docker Compose ／ AWS S3 ／ Git / GitHub ／ VS Code ／ Claude Code</dd>
+            <dt>担当範囲</dt>
+            <dd>要件ヒアリング、仕様書・タスク管理ドキュメントの作成、DB 設計、API・管理画面・公開サイトの実装、動作確認（すべて 1 名で担当）</dd>
+          </dl>
+        </details>
+
+        <details class="work-detail" id="work-salon">
+          <summary class="work-detail__head"><h3>美容室の検索・予約サイト</h3><p class="card__meta">personal / 2026.04–07 / 1 名 / <a href="https://github.com/taotomo/Salon-booing-system-app" target="_blank" rel="noopener">GitHub</a></p></summary>
+          <dl>
+            <dt>課題</dt>
+            <dd>「予約」という業務は、利用者・サロン・スタッフ・メニュー・日時が絡み、ステータスも変化します。テーブル設計と認可（誰が何を操作できるか）を本格的に練習するため、Hot Pepper Beauty のような検索・予約サイトを題材に選びました。</dd>
+            <dt>実装内容</dt>
+            <dd><ul>
+              <li>利用者向け：エリア・ジャンル検索、評価順・距離順ソート、サロン詳細（写真・メニュー・スタッフ・地図・口コミ）、メニュー → スタッフ → 日時 → 確認の 4 ステップ予約、予約履歴とキャンセル、お気に入り、レビュー投稿・編集・削除</li>
+              <li>オーナー向け管理画面：サロン情報の編集、スタッフ・メニューの CRUD、画像アップロード、予約の承認・キャンセル</li>
+              <li>予約時にオーナーへ、承認・キャンセル時に利用者へ通知</li>
+              <li>PHPUnit の Feature テスト 78 件、React コンポーネントの Vitest テスト</li>
+            </ul></dd>
+            <dt>工夫した点・詰まって解決した点</dt>
+            <dd><ul>
+              <li><strong>URL の ID を変えると他人のサロンを編集できてしまう</strong>ことに気づき、調べて IDOR という脆弱性だと分かりました。全操作に所有者チェックを入れ、「他人のデータを操作すると 403 になる」ことをテストコードで確認しています。</li>
+              <li>当初クライアント側で行っていた検索・絞り込みを、データが増えても動くようサーバー側のクエリ（<code>when()</code> による条件付き、<code>withAvg()</code> で平均評価を集計してソート、ページネーション）に作り直しました。</li>
+              <li>Laravel と React を Inertia.js でつなぐ構成で、「どこまでがサーバーで、どこからがブラウザか」というデータの流れを理解するのに時間がかかりました。コントローラーが React ページに props を渡す形だと整理してから、実装が速くなりました。</li>
+            </ul></dd>
+            <dt>使用技術</dt>
+            <dd>PHP 8.4 ／ Laravel 13.20 ／ React 18.3 ／ TypeScript 5.9 ／ Inertia.js 2 ／ Tailwind CSS ／ MySQL 8.0 ／ Docker Compose ／ PHPUnit 12 ／ Vitest 4 ／ Git / GitHub ／ VS Code ／ GitHub Copilot ／ Claude Code</dd>
+            <dt>担当範囲</dt>
+            <dd>仕様検討、DB 設計（7 テーブル）、バックエンド・フロントエンドの実装、テスト作成（すべて 1 名で担当）</dd>
+          </dl>
+        </details>
+
+        <details class="work-detail" id="work-netshop">
+          <summary class="work-detail__head"><h3>ネットショップ</h3><p class="card__meta">personal / 2026.02–03 / 1 名 / <a href="https://github.com/taotomo/net_shop" target="_blank" rel="noopener">GitHub</a></p></summary>
+          <dl>
+            <dt>課題</dt>
+            <dd>スクール課題を終えたあと、認証・CRUD・FormRequest・認可・テストを、スターターキットに頼らず自分で組めるかを確かめるために作りました。</dd>
+            <dt>実装内容</dt>
+            <dd><ul>
+              <li>会員登録・ログイン（コントローラーを自作）</li>
+              <li>ショップの開設・編集・削除、商品の出品・編集・削除（画像アップロード対応）</li>
+              <li>商品の購入（在庫を 1 減らす。在庫 0 はエラー）、カテゴリによる絞り込み、自分の出品一覧、プロフィール編集</li>
+              <li>PHPUnit の Feature テスト 8 ファイル・Unit テスト 5 ファイル（約 50 ケース）</li>
+            </ul></dd>
+            <dt>工夫した点・詰まって解決した点</dt>
+            <dd><ul>
+              <li>入力チェックを 6 つの FormRequest に分離し、コントローラーには検証後の処理だけを残しました。</li>
+              <li>「自分のショップは更新できるが、他人のショップは更新できない」といった認可の確認をテストに含め、テストメソッド名を日本語にして「何を確認しているか」がそのまま読めるようにしました。</li>
+              <li>フリマアプリの経験があったため大きく詰まる箇所はなく、その分をテストの充実にあてました。</li>
+            </ul></dd>
+            <dt>使用技術</dt>
+            <dd>PHP 8.0 ／ Laravel 8.83 ／ MySQL 8.0 ／ Apache ／ Docker Compose ／ PHPUnit 9.6 ／ Git / GitHub ／ VS Code</dd>
+            <dt>担当範囲</dt>
+            <dd>設計・実装・テスト（すべて 1 名で担当）</dd>
+          </dl>
+        </details>
+
+        <details class="work-detail" id="work-timecard">
+          <summary class="work-detail__head"><h3>勤怠管理アプリ</h3><p class="card__meta">school / 2026.01 / 1 名 / <a href="https://github.com/taotomo/time-card-app" target="_blank" rel="noopener">GitHub</a></p></summary>
+          <dl>
+            <dt>課題</dt>
+            <dd>一般スタッフが日々の出退勤・休憩を打刻し、管理者が全員の勤怠を確認・修正できる勤怠管理システムを、渡された要件定義をもとに実装する課題です。</dd>
+            <dt>実装内容</dt>
+            <dd><ul>
+              <li>会員登録・メール認証・ログイン</li>
+              <li>出勤・休憩開始・休憩終了・退勤の打刻と、状態に応じたボタン制御</li>
+              <li>月次カレンダーでの勤怠一覧、日付別・スタッフ別の表示</li>
+              <li>打刻の修正申請と、管理者による承認フロー</li>
+              <li>月次勤怠データの CSV 出力</li>
+            </ul></dd>
+            <dt>工夫した点・詰まって解決した点</dt>
+            <dd><ul>
+              <li>1 日に複数回取得する休憩時間の合算と、実労働時間の計算。</li>
+              <li>日付をまたぐ勤務（深夜勤務）の扱い。</li>
+              <li>修正申請 → 管理者の承認 → 勤怠データへの反映、という状態遷移の設計。</li>
+            </ul></dd>
+            <dt>使用技術</dt>
+            <dd>PHP 8.2 ／ Laravel 10.50 ／ MySQL 8.0 ／ Docker Compose（Nginx / PHP-FPM）／ Git / GitHub ／ VS Code ／ GitHub Copilot</dd>
+            <dt>担当範囲</dt>
+            <dd>詳細設計・実装・テスト・修正（1 名）</dd>
+          </dl>
+        </details>
+
+        <details class="work-detail" id="work-flea">
+          <summary class="work-detail__head"><h3>フリマアプリ</h3><p class="card__meta">school / 2025.12–2026.01 / 1 名 / <a href="https://github.com/taotomo/flea-market-app" target="_blank" rel="noopener">GitHub</a></p></summary>
+          <dl>
+            <dt>課題</dt>
+            <dd>ユーザー同士で商品を出品・購入できるフリマアプリを、渡された要件定義をもとに実装する課題です。初めて要件から完成まで通して作った Laravel アプリです。</dd>
+            <dt>実装内容</dt>
+            <dd><ul>
+              <li>会員登録・メール認証・ログイン／ログアウト</li>
+              <li>商品の出品・購入、お気に入り、コメント</li>
+              <li>プロフィール編集、購入履歴・出品履歴</li>
+              <li>Stripe API による支払い方法の選択と決済、配送先住所の変更</li>
+            </ul></dd>
+            <dt>工夫した点・詰まって解決した点</dt>
+            <dd><ul>
+              <li>バリデーションを FormRequest にどう分けるか（画面ごとに分けるか、共通化するか）の判断。</li>
+              <li>初めて本格的にデバッグをした案件。エラー文を読む → ログを見る → 該当箇所を絞る、という手順をここで身につけました。</li>
+              <li>Stripe のテストモードの設定と、決済フローの動作確認。</li>
+              <li>初めて単体テスト・結合テストのコードを作成。</li>
+            </ul></dd>
+            <dt>使用技術</dt>
+            <dd>PHP 8.2 ／ Laravel 8.83 ／ MySQL 8.0 ／ Docker Compose（Nginx / PHP-FPM）／ Stripe API ／ Git / GitHub ／ VS Code</dd>
+            <dt>担当範囲</dt>
+            <dd>詳細設計・実装・テスト・修正（1 名）</dd>
+          </dl>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="section__title" id="contact-title"><span>contact</span>連絡先</h2>
+        <div class="prose stack fade-in">
+          <p style="color:var(--muted)">ご連絡は以下からお願いします。京都在住で、京都・大阪への出社にも対応できます。</p>
+          <ul class="contact-list">
+            <li><span class="label">email</span><a href="mailto:toatomo2913@gmail.com">toatomo2913@gmail.com</a></li>
+            <li><span class="label">github</span><a href="https://github.com/taotomo" target="_blank" rel="noopener">github.com/taotomo</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">© 2026 Tomoya Ueda — all systems nominal</div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

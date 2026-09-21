@@ -1,0 +1,7 @@
+# 検討用のファイル（手元には残すが、公開サイトには含めない）
+design-proposals/
+old/
+canvas-src/
+
+# macOS
+.DS_Store
